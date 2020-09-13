@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        #logo {}
+
+        #logo img {
+            height: 45px;
+            margin: 20px 15px;
+        }
+
+        .list {
+            display: flex;
+            font-family: 'Baloo Tamma 2', cursive;
+
+        }
+
+        .list li {
+            list-style: none;
+            font-size: 1.2rem;
+        }
+
+        .list li a {
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .list li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+
+        }
+
+        #home::before {
+            content: "";
+            background: url(background\ head.jpg) no-repeat center center/cover;
+            position: absolute;
+            height: 80%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.80;
+        }
+
+        #home h1 {
+            color: black;
+
+        }
+
+        #home p {
+            font-size: 1.2rem;
+        }
+
+        .primary {
+            font-size: 2.8rem;
+            padding: 12px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            color: white;
+            border: 3px solid white;
+            background-color: black;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .btn a:hover {
+            color: white;
+        }
+
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .h-secondary {
+            font-size: 2.3rem;
+            padding: 12px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+
+        }
+
+        .box {
+            border: 2px solid brown;
+            padding: 23px;
+            border-radius: 23px;
+            background-color: #efebeb;
+            margin: 23px;
+        }
+
+        .box img {
+            display: block;
+            margin: auto;
+            height: 160px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logg.png" alt="MyOnlineMeals.com">
+        </div>
+        <ul class="list">
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="primary">Welcome To MyOnlineMeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vel, doloremque, enim iste ea omnis sed
+            quidem </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <button class="btn">Order Food</button>
+
+
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="1.png" alt="">
+                <h2 class="h-secondary center">
+                    Food Ordering
+                </h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui assumenda ex voluptates eum
+                    quos! 
+
+                </p>
+            </div>
+            <div class="box">
+                <img src="2.png" alt="">
+                <h2 class="h-secondary center">
+                    Bulk Ordering
+                </h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui assumenda ex voluptates eum
+                    quos! 
+
+                </p>
+            </div>
+            <div class="box">
+                <img src="3.png" alt="">
+                <h2 class="h-secondary center">
+                    Food Catering
+                </h2>
+                <p class="center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui assumenda ex voluptates eum
+                    quos! 
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
